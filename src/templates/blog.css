@@ -1,0 +1,80 @@
+.wordpress-post-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.wp-block-video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.wordpress-post-h1 {
+  padding-top: 1rem;
+  text-align: left !important;
+}
+
+.wordpress-list {
+  width: 300px;
+  margin: 30px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+}
+
+.wordpress-list li {
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+  border-bottom: 1px solid #ccc;
+}
+
+.wordpress-list li::before {
+  content: "— ";
+}
+
+.wordpress-list li:last-child {
+  border: none;
+}
+.wordpress-list li:hover {
+  font-size: 22px;
+}
+
+.wordpress-post-blockquote {
+  background: none !important;
+  margin: 0 auto;
+  padding: 1em;
+  border-left: 5px solid #999;
+}
+.wordpress-post-blockquote:before {
+  display: none;
+}
+.wordpress-post-blockquote:not(:first-of-type) {
+  margin-top: 0.5em;
+}
+.wordpress-post-blockquote p {
+  color: #555;
+  font-size: 12pt;
+  line-height: 1.4;
+  font-family: "PT Serif", Cambria, "Hoefler Text", Utopia, "Liberation Serif",
+    "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+}
+@element 'blockquote' and (min-width: 300px) {
+  .wordpress-post-blockquote {
+    padding: 1em 20% 1em 1em;
+  }
+  .wordpress-post-blockquote p {
+    font-size: 14pt;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .wordpress-post-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}
