@@ -23,16 +23,15 @@ export const query = graphql`
 `
 
 const ComponentName = props => {
-  const htmlStr = props.data.wpPost.excerpt
-  // create a span element
-  var temp = document.createElement("span")
-  // set the html to the element
-  temp.innerHTML = htmlStr
-  // get the text content using temp.textContent
+  const excerpt = props.data.wpPost.excerpt
+
+  const start = excerpt.indexOf(">")
+  const end = excerpt.indexOf("<", 1)
+  const description = excerpt.slice(start + 1, end)
 
   return (
     <Layout>
-      <SEO title={props.data.wpPost.title} description={temp.textContent} />
+      <SEO title={props.data.wpPost.title} description={description} />
       <section className="blog-template">
         <div className="section-center">
           <article className="blog-content">

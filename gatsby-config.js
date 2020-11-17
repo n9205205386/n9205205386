@@ -14,6 +14,7 @@ module.exports = {
     image: "/twitter-img.png",
     siteUrl: "https://gauravadhikari.com",
   },
+  pathPrefix: "/n9205205386",
   plugins: [
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -43,20 +44,6 @@ module.exports = {
           "UA-93468171-12", // Google Analytics / GA
           // "AW-CONVERSION_ID", // Google Ads / Adwords / AW
           // "DC-FLOODIGHT_ID", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
-        ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Roboto`,
-            variants: [`400`, `700`],
-          },
-          {
-            family: `Open Sans`,
-          },
         ],
       },
     },
